@@ -1,0 +1,30 @@
+head {
+   margin: 0;
+   padding: 0;
+}
+
+.list-style {
+   background-color: red;
+   padding: 5px;
+   color: white;
+}
+
+.list-style ul {
+   list-style-position: inside;
+   list-style-image: url(check.png);
+   lighting-color: red;
+   list-style-type: circle;
+}
+
+.content ul {
+   background-color: red;
+   list-style: none;
+   padding: 5px;
+   list-style-position: inside;
+}
+
+.content li::before {
+   content: "\f058";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 300;
+}
